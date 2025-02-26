@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>index</title>
+    <link rel="stylesheet" href="css\style.css">
+  </head>
+  <body>
+    <div class="button-container">
+      <button onclick="showForm('management')">Management Login</button>
+      <button onclick="showForm('teacher')">Teacher Login</button>
+      <button onclick="showForm('student')">Student Login</button>
+  </div>
+  <!-- Management Login Form -->
+  <div id="management-form" class="form-container">
+    <h2>Management Login</h2>
+    <form id="management-login-form" data-role="management">
+    <div class="input">
+      <input type="text" placeholder="Username" required id="management_input">
+      <label for="management_input">
+        <img src="assets\pictures\user-solid-24.png" alt="Username">
+      </label>
+    </div>
+    <div class="input">
+      <input type="password" placeholder="Password" required id="management_password">
+      <label for="management_password">
+        <img src="assets\pictures\lock-alt-solid-24.png" alt="password">
+      </label>
+    </div>
+    <button type="submit">Submit</button>
+    </form>
+    <p class="error-message" id="management-error"></p>
+</div>
+<!-- Teacher Login Form -->
+<div id="teacher-form" class="form-container">
+  <h2>Teacher Login</h2>
+  <form id="teacher-login-form" data-role="teacher">
+  <div class="input">
+    <input type="text" placeholder="Username" required id="teacher_input">
+    <label for="teacher_input">
+      <img src="assets\pictures\user-solid-24.png" alt="Username">
+    </label>
+  </div>
+  <div class="input">
+    <input type="password" placeholder="Password" required id="teacher_password">
+    <label for="teacher_password">
+      <img src="assets\pictures\lock-alt-solid-24.png" alt="password">
+    </label>
+  </div>
+  <button type="submit">Submit</button>
+  </form>
+  <p class="error-message" id="teacher-error"></p>
+</div>
+<!-- Student Login Form -->
+<div id="student-form" class="form-container">
+  <h2>Student Login</h2>
+  <form id="student-login-form" data-role="student">
+  <div class="input">
+    <input type="text" placeholder="Username" required id="student_input">
+    <label for="student_input">
+      <img src="assets\pictures\user-solid-24.png" alt="Username">
+    </label>
+  </div>
+  <div class="input">
+    <input type="password" placeholder="Password" required id="student_password">
+    <label for="student_password">
+      <img src="assets\pictures\lock-alt-solid-24.png" alt="password">
+    </label>
+  </div>
+  <button type="submit">Submit</button>
+ </form>
+ <p class="error-message" id="student-error"></p>
+</div>
+<script src="js/auth.js"></script>
+  </body>
+</html>
